@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wheeldustry</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/december_22.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculator">
+        <div class="calculator__wrap">
+          <div class="calculator__top">
+            <div class="calculator-top__headline">Рассчитайте стоимость ваших новых дисков</div>
+          </div>
+          <div class="calculator__body">
+            <form>
+              <div class="calculator__block block1" style="height: auto">
+                <div class="calculator__title">Выберите тип диска</div>
+                <div class="calculator__label wheelsType">
+                  <label class="checked label-type"
+                    ><div class="jq-radio checked">
+                      <input type="radio" name="type" value="mono" checked />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    <span>Односоставные </span>
+                    Из цельных болванок кованого алюминия мы создаём лёгкие и прочные диски.
+                  </label>
+                  <label class="label-type"
+                    ><div class="jq-radio">
+                      <input type="radio" name="type" value="two" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    <span>Двусоставные </span>
+                    Из цельных болванок кованого алюминия мы создаём лёгкие и прочные диски.
+                  </label>
+                  <label class="label-type"
+                    ><div class="jq-radio">
+                      <input type="radio" name="type" value="suv" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    <span>Off-road</span>
+                    Из цельных болванок кованого алюминия мы создаём лёгкие и прочные диски.
+                  </label>
+                </div>
+              </div>
+              <div class="calculator__block block2" style="height: auto">
+                <div class="calculator__title">Укажите диаметр и ширину</div>
+                <div class="calculator__subtitle">Выберите диаметр</div>
+                <div class="calculator__label wheelsRadius" data-val="24">
+                  <label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="16" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    16'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="17" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    17'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="18" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    18'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="19" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    19'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="20" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    20'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="21" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    21'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="22" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    22'</label
+                  ><label
+                    ><div class="jq-radio">
+                      <input type="radio" name="diameter" value="23" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    23'</label
+                  ><label
+                    ><div class="jq-radio checked">
+                      <input type="radio" name="diameter" value="24" checked="checked" />
+                      <div class="jq-radio__div"></div>
+                    </div>
+                    24'</label
+                  >
+                </div>
+                <div style="display: none" class="calculator__range">
+                  <div class="calculator__subtitle">Выберите ширину диска (J)</div>
+                  <div id="range__value" class="calculator-range__value">10.0J</div>
+                  <div class="calculator-range__body">
+                    <div id="range" data-val="9" class="noUi-target noUi-ltr noUi-horizontal">
+                      <div class="noUi-base">
+                        <div class="noUi-connects"></div>
+                        <div
+                          class="noUi-origin"
+                          style="transform: translate(-100%, 0px); z-index: 4"
+                        >
+                          <div
+                            class="noUi-handle noUi-handle-lower"
+                            data-handle="0"
+                            tabindex="0"
+                            role="slider"
+                            aria-orientation="horizontal"
+                            aria-valuemin="10.0"
+                            aria-valuemax="12.0"
+                            aria-valuenow="10.0"
+                            aria-valuetext="10.0"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="noUi-pips noUi-pips-horizontal">
+                        <div
+                          class="noUi-marker noUi-marker-horizontal noUi-marker-large"
+                          style="left: 0%"
+                        ></div>
+                        <div
+                          class="noUi-value noUi-value-horizontal noUi-value-large"
+                          data-value="10"
+                          style="left: 0%"
+                        >
+                          10.0
+                        </div>
+                        <div
+                          class="noUi-marker noUi-marker-horizontal noUi-marker-sub half"
+                          style="left: 25%"
+                        ></div>
+                        <div
+                          class="noUi-value noUi-value-horizontal noUi-value-sub"
+                          data-value="10.5"
+                          style="left: 25%"
+                        >
+                          10.5
+                        </div>
+                        <div
+                          class="noUi-marker noUi-marker-horizontal noUi-marker-sub"
+                          style="left: 50%"
+                        ></div>
+                        <div
+                          class="noUi-value noUi-value-horizontal noUi-value-sub"
+                          data-value="11"
+                          style="left: 50%"
+                        >
+                          11.0
+                        </div>
+                        <div
+                          class="noUi-marker noUi-marker-horizontal noUi-marker-sub half"
+                          style="left: 75%"
+                        ></div>
+                        <div
+                          class="noUi-value noUi-value-horizontal noUi-value-sub"
+                          data-value="11.5"
+                          style="left: 75%"
+                        >
+                          11.5
+                        </div>
+                        <div
+                          class="noUi-marker noUi-marker-horizontal noUi-marker-large"
+                          style="left: 100%"
+                        ></div>
+                        <div
+                          class="noUi-value noUi-value-horizontal noUi-value-large"
+                          data-value="12"
+                          style="left: 100%"
+                        >
+                          12.0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__block block3" style="height: auto">
+                <div class="calculator__title">Дополнительные опции</div>
+                <div class="calculator__label wheelsOption">
+                  <label class="label-calculator">
+                    <div class="jq-checkbox">
+                      <input
+                        type="checkbox"
+                        name="option[1]"
+                        value="polish"
+                        data-name="Сложное окрашивание"
+                      />
+                      <div class="jq-checkbox__div"></div>
+                    </div>
+                    Сложное окрашивание
+                    <div class="calculator__tooltip">
+                      <div class="calculator-tooltip__icon">
+                        <svg><use xlink:href="/templates/cmst/images/svg/info.svg#info"></use></svg>
+                      </div>
+                      <div class="calculator-tooltip__wrap">
+                        <div class="calculator-tooltip__content">
+                          <!--img size: 300 * 115 px -->
+                          <img src="/templates/cmst/images/plus2.jpg" />
+                          <div class="calculator-tooltip__text">
+                            Придаст дискам уникальный вид, возможно применение для отдельных
+                            элементов диска.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="label-calculator"
+                    ><div class="jq-checkbox">
+                      <input
+                        type="checkbox"
+                        name="option[2]"
+                        value="carbonic"
+                        data-name="Полировка"
+                      />
+                      <div class="jq-checkbox__div"></div>
+                    </div>
+                    Полировка
+                    <div class="calculator__tooltip">
+                      <div class="calculator-tooltip__icon">
+                        <svg><use xlink:href="/templates/cmst/images/svg/info.svg#info"></use></svg>
+                      </div>
+                      <div class="calculator-tooltip__wrap">
+                        <div class="calculator-tooltip__content">
+                          <!--img size: 300 * 115 px -->
+                          <img src="/templates/cmst/images/plus3.jpg" />
+                          <div class="calculator-tooltip__text">
+                            Ручная шлифовка с последующим покрытием тонирующим лаком.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="label-calculator"
+                    ><div class="jq-checkbox">
+                      <input
+                        type="checkbox"
+                        name="option[3]"
+                        value="chromium"
+                        data-name="Браширование"
+                      />
+                      <div class="jq-checkbox__div"></div>
+                    </div>
+                    Браширование
+                    <div class="calculator__tooltip">
+                      <div class="calculator-tooltip__icon">
+                        <svg><use xlink:href="/templates/cmst/images/svg/info.svg#info"></use></svg>
+                      </div>
+                      <div class="calculator-tooltip__wrap">
+                        <div class="calculator-tooltip__content">
+                          <!--img size: 300 * 115 px -->
+                          <img src="/templates/cmst/images/plus1.jpg" />
+                          <div class="calculator-tooltip__text">
+                            Придаст индивидуальности и неповторимости автомобилю.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="calculator__submit">
+                  <input type="submit" value="Рассчитать стоимость" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="calculator__bottom" style="display: none">
+            <div class="calculator__results">
+              <div class="calculator-results__left">
+                <div class="calculator-results__block">
+                  <div class="calculator-results__title">Выбранные параметры:</div>
+                  <span id="paramRes">Моноблоки, Диаметр: 24', Ширина: 10J</span>
+                </div>
+                <div class="calculator-results__block">
+                  <div class="calculator-results__title">Выбранные опции:</div>
+                  <span id="addOptionRes"></span>
+                </div>
+                <div class="calculator-results__price">
+                  <span>91&nbsp;750</span> руб.
+                  <div class="calculator-results__title">стоимость одного диска</div>
+                </div>
+              </div>
+              <div class="calculator-results__right">
+                <div class="calculator-results__total"><span>367&nbsp;000</span> руб.</div>
+                <div class="calculator-results__note">стоимость комплекта (4 диска)</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: none" class="calculator__form">
+            <div class="calculator-form__close"></div>
+            <div class="calculator-form__top">
+              <div class="calculator-form__headline">Оформите заказ <span>прямо сейчас</span></div>
+              <div class="calculator-form__info">
+                Укажите контактные данные и наши менеджеры оперативно свяжутся с вами для уточнения
+                деталей.
+              </div>
+            </div>
+            <form id="calcForm" class="calcForm" onsubmit="return false;">
+              <input type="hidden" name="system_form_id" value="159" />
+              <input type="hidden" name="system_template" value="calcForm" />
+              <input type="hidden" value="/webforms/posted/" name="ref_onsuccess" />
+              <input type="hidden" name="data[new][calc_check]" value="" />
+              <input type="hidden" name="system_email_to" value="766" />
+              <ul>
+                <li class="fieldsBlock calc_name">
+                  <div class="calculator-form__title">Ваше имя <span>*</span></div>
+                  <input type="text" name="data[new][calc_name]" value="" obligatory="required" />
+                </li>
+                <li class="fieldsBlock calc_email">
+                  <div class="calculator-form__title">Эл.почта <span>*</span></div>
+                  <input type="text" name="data[new][calc_email]" value="" obligatory="required" />
+                </li>
+                <li class="fieldsBlock calc_phone">
+                  <div class="calculator-form__title">Телефон <span></span></div>
+                  <input
+                    type="text"
+                    name="data[new][calc_phone]"
+                    value=""
+                    obligatory=""
+                    placeholder="+7 (       )         -"
+                    maxlength="17"
+                  />
+                </li>
+                <li class="fieldsBlock">
+                  <div class="calculator-form__title">Примечание <span></span></div>
+                  <textarea name="data[new][calc_notice]" obligatory=""></textarea>
+                </li>
+                <li class="fieldsBlock calc_page">
+                  <div class="calculator-form__title">Страница <span></span></div>
+                  <input type="text" name="data[new][calc_page]" value="" obligatory="" />
+                </li>
+                <li class="fieldsBlock calc_param">
+                  <div class="calculator-form__title">Параметры <span></span></div>
+                  <input type="text" name="data[new][calc_param]" value="" obligatory="" />
+                </li>
+                <li class="fieldsBlock calc_option">
+                  <div class="calculator-form__title">Опции <span></span></div>
+                  <input type="text" name="data[new][calc_option]" value="" obligatory="" />
+                </li>
+                <li class="fieldsBlock calc_price">
+                  <div class="calculator-form__title">Стоимость <span></span></div>
+                  <input type="text" name="data[new][calc_price]" value="" obligatory="" />
+                </li>
+
+                <li>
+                  <div class="calculator-form__submit">
+                    <input
+                      type="submit"
+                      class="sendCalcForm"
+                      onclick="ym(56751955, 'reachGoal', 'calc_send'); return true;"
+                      value="Отправить заказ"
+                    />
+                  </div>
+                  <div class="calculator-form__agreement">
+                    Нажимая кнопку “Отправить заказ” вы принимаете
+                    <a href="/privacy_policy/" target="_blank"
+                      >пользовательское соглашение на обработку персональной информации</a
+                    >
+                  </div>
+                  <div class="calculator-form__required">
+                    <span>*</span> - обязательные поля для заполнения
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .wrapper {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      .calculator-tooltip__text {
+        display: none !important;
+      }
+      @media (max-width: 767px) {
+        .calculator__wrap {
+          padding: 0px 15px;
+        }
+      }
+    </style>
+
+    <script>
+      const elementsCheckbox = document.querySelectorAll('.jq-checkbox');
+      elementsCheckbox.forEach((item) => {
+        item.addEventListener('click', (e) => {
+          item.classList.toggle('checked');
+        });
+      });
+
+      const elementsType = document.querySelectorAll('.label-type');
+      elementsType.forEach((item) => {
+        item.addEventListener('click', (e) => {
+          if (!e.currentTarget.classList.contains('checked')) {
+            elementsType.forEach((item) => {
+              const radio = item.querySelector('.jq-radio');
+              item.classList.remove('checked');
+              radio.classList.remove('checked');
+            });
+            e.currentTarget.classList.add('checked');
+            const radio = e.currentTarget.querySelector('.jq-radio');
+            radio.classList.add('checked');
+          }
+        });
+      });
+    </script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wNumb.js"></script>
+
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
