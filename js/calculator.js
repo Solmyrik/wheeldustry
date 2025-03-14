@@ -253,9 +253,13 @@ function wheelsCalc(wheelsParamObj, addOptionObj) {
     else if (wheelsType === 'magnesium') wheelsTypeText = 'MAGNESIUM';
     var paramList = wheelsTypeText + ', Диаметр: ' + wheelsRadius;
 
-    var priceForJ = ((current_j - min_j) / 0.5) * 1000;
+    var priceForJ = 0;
     var totalPriceForOneWheel = min_price + priceForJ + addOptionPrice;
     var totalPrice = totalPriceForOneWheel * 4;
+
+    console.log(priceForJ);
+    console.log(totalPriceForOneWheel);
+    console.log(totalPrice);
 
     $('#addOptionRes').html(optionList);
     $('#paramRes').html(paramList);
