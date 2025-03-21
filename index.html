@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wheeldustry</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/december_22.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -209,21 +205,6 @@
                       <div class="jq-checkbox__div"></div>
                     </div>
                     Сложное окрашивание
-                    <div class="calculator__tooltip">
-                      <div class="calculator-tooltip__icon">
-                        <svg><use xlink:href="/templates/cmst/images/svg/info.svg#info"></use></svg>
-                      </div>
-                      <div class="calculator-tooltip__wrap">
-                        <div class="calculator-tooltip__content">
-                          <!--img size: 300 * 115 px -->
-                          <img src="/templates/cmst/images/plus2.jpg" />
-                          <div class="calculator-tooltip__text">
-                            Придаст дискам уникальный вид, возможно применение для отдельных
-                            элементов диска.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </label>
                   <label class="label-calculator"
                     ><div class="jq-checkbox">
@@ -236,20 +217,6 @@
                       <div class="jq-checkbox__div"></div>
                     </div>
                     Полировка
-                    <div class="calculator__tooltip">
-                      <div class="calculator-tooltip__icon">
-                        <svg><use xlink:href="/templates/cmst/images/svg/info.svg#info"></use></svg>
-                      </div>
-                      <div class="calculator-tooltip__wrap">
-                        <div class="calculator-tooltip__content">
-                          <!--img size: 300 * 115 px -->
-                          <img src="/templates/cmst/images/plus3.jpg" />
-                          <div class="calculator-tooltip__text">
-                            Ручная шлифовка с последующим покрытием тонирующим лаком.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </label>
                   <label class="label-calculator"
                     ><div class="jq-checkbox">
@@ -262,20 +229,6 @@
                       <div class="jq-checkbox__div"></div>
                     </div>
                     Браширование
-                    <div class="calculator__tooltip">
-                      <div class="calculator-tooltip__icon">
-                        <svg><use xlink:href="/templates/cmst/images/svg/info.svg#info"></use></svg>
-                      </div>
-                      <div class="calculator-tooltip__wrap">
-                        <div class="calculator-tooltip__content">
-                          <!--img size: 300 * 115 px -->
-                          <img src="/templates/cmst/images/plus1.jpg" />
-                          <div class="calculator-tooltip__text">
-                            Придаст индивидуальности и неповторимости автомобилю.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </label>
                 </div>
                 <div class="calculator__submit">
@@ -304,6 +257,10 @@
                 <div class="calculator-results__total"><span>367&nbsp;000</span> руб.</div>
                 <div class="calculator-results__note">стоимость комплекта (4 диска)</div>
               </div>
+            </div>
+            <div class="calculator__public">
+              Цены являются ориентировочными. Для получения более точной информации и подробной
+              консультации — рекомендуем обратиться к нашим менеджерам.
             </div>
           </div>
 
@@ -408,9 +365,21 @@
 
     <script>
       const elementsCheckbox = document.querySelectorAll('.jq-checkbox');
+
       elementsCheckbox.forEach((item) => {
+        let isClickable = true;
+
         item.addEventListener('click', (e) => {
+          if (!isClickable) return;
+
+          console.log(item);
+          isClickable = false;
+
           item.classList.toggle('checked');
+
+          setTimeout(() => {
+            isClickable = true;
+          }, 300);
         });
       });
 
@@ -432,15 +401,7 @@
     </script>
 
     <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery.matchHeight-min.js"></script>
-    <script src="js/jquery.modal.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/wNumb.js"></script>
-
     <script src="js/calculator.js"></script>
   </body>
 </html>

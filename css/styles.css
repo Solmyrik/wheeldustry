@@ -6924,7 +6924,7 @@ label {
   position: absolute;
   left: 0;
   top: -5px;
-  padding: 8px 0;
+
   width: 32px;
   height: 32px;
   background: rgb(17, 179, 255);
@@ -6934,6 +6934,9 @@ label {
   font-weight: 500;
   color: #fff;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator__block.block1 .calculator__title:before {
